@@ -38,12 +38,6 @@ public class ThumbnailGeneratorService {
 
         ImageResponse response = imageModel.call(new ImagePrompt(prompt));
         Image image = response.getResult().getOutput();
-        /*
-        byte[] bytes = restClient.get()
-                .uri(URI.create(image.getUrl()))
-                .retrieve()
-                .body(byte[].class);
-        */
 
         byte[] bytes = (image.getB64Json() != null)
                 ? Base64.getDecoder().decode(image.getB64Json())          // gpt-image 계열
