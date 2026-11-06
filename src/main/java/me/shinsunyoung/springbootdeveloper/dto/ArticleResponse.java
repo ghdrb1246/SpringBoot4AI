@@ -1,7 +1,7 @@
-package me.shinsunyung.springbootdeveloper.dto;
+package me.shinsunyoung.springbootdeveloper.dto;
 
 import lombok.Getter;
-import me.shinsunyung.springbootdeveloper.domain.Article;
+import me.shinsunyoung.springbootdeveloper.domain.Article;
 
 @Getter
 public class ArticleResponse {
@@ -12,5 +12,4 @@ public class ArticleResponse {
         this.title = article.getTitle();
         this.content = article.getContent();
     }
-
 }

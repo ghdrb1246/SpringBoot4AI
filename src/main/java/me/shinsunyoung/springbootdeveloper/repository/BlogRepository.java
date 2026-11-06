@@ -1,7 +1,8 @@
-package me.shinsunyung.springbootdeveloper.repository;
+package me.shinsunyoung.springbootdeveloper.repository;
 
-import me.shinsunyung.springbootdeveloper.domain.Article;
+import me.shinsunyoung.springbootdeveloper.domain.Article;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BlogRepository extends JpaRepository<Article, Long> {
+
 }
