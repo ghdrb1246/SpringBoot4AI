@@ -25,3 +25,7 @@ spring:
           model: gpt-image-2
           quality: low
           size: 1024x1024
+
+jwt:
+  issuer: ajufresh@gmail.com
+  secret_key: study-springboot
